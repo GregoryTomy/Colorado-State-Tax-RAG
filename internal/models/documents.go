@@ -7,7 +7,7 @@ import (
 // Document represents a scraped page from the Colorado Property Tax website
 type Document struct {
 	URL          string
-	Tile         string
+	Title        string
 	Content      string
 	Path         []string // Heirarchical path (volume/chapter/section)
 	LastModified time.Time
