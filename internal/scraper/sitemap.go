@@ -77,6 +77,8 @@ func CollectSitemap(siteMapLink string) ([]models.SitemapURL, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	log.Printf("Extracted %d URLs from sitemap at %s", len(urls), siteMapLink)
+
 	return urls, nil
 }
