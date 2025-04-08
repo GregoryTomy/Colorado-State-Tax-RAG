@@ -9,8 +9,8 @@ import (
 
 var testURLs = []string{
 	"https://arl.colorado.gov/chapter-1-statutory-and-case-law-references",
-	// "https://arl.colorado.gov/chapter-2-appraisal-process-economic-areas-and-the-approaches-to",
-	// "https://arl.colorado.gov/chapter-3-sales-confirmation-and-stratification",
+	"https://arl.colorado.gov/chapter-2-appraisal-process-economic-areas-and-the-approaches-to",
+	"https://arl.colorado.gov/chapter-3-sales-confirmation-and-stratification",
 }
 
 func main() {
@@ -18,7 +18,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to create new SQLite Store: %v", err)
 	}
-
 	defer store.Close()
 
 	for _, url := range testURLs {
